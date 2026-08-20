@@ -1,0 +1,2027 @@
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: calc(100% - 48px);
+  max-width: 1300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 12px 10px 18px;
+
+  background: rgba(255, 255, 255, 0.55);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.75);
+
+  border-radius: 999px;
+
+  box-shadow:
+    0 10px 40px rgba(50, 40, 20, 0.08);
+
+  z-index: 100;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+.brand-logo {
+  display: block;
+
+  width: auto;
+  height: 42px;
+
+  object-fit: contain;
+}
+
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+
+  gap: 32px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+.nav-links a {
+  opacity: 0.55;
+
+  transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+
+/* =========================
+   CONTACT BUTTON
+========================= */
+
+.contact-button {
+  padding: 12px 19px;
+
+  border-radius: 999px;
+
+  background: #171717;
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  transition:
+    transform 0.2s ease;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+  min-height: 100vh;
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 150px 6vw 70px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+    radial-gradient(
+      ellipse 55% 45% at 15% 25%,
+      rgba(255, 190, 170, 0.20),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 50% 50% at 85% 70%,
+      rgba(180, 210, 255, 0.20),
+      transparent 70%
+    ),
+    #f4efe6;
+}
+
+
+/* =========================
+   HERO INTRO
+========================= */
+
+.hero-intro {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  max-width: 1200px;
+
+  text-align: center;
+}
+
+.hero-tag {
+  display: inline-block;
+
+  padding: 7px 14px;
+
+  margin-bottom: 22px;
+
+  border: 1px solid rgba(0, 0, 0, 0.12);
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.35);
+
+  backdrop-filter: blur(10px);
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================
+   HERO TITLE
+========================= */
+
+.hero h1 {
+  font-size: clamp(80px, 13vw, 180px);
+
+  line-height: 0.78;
+
+  letter-spacing: -8px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.hero h1 span {
+  display: block;
+
+  font-family: "Playfair Display", serif;
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  text-transform: none;
+
+  letter-spacing: -5px;
+}
+
+.hero-intro p {
+  max-width: 340px;
+
+  margin: 32px auto 0;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  opacity: 0.6;
+}
+
+
+/* =====================================================
+   TEAM PHOTO
+===================================================== */
+
+.hero-photo-container {
+  width: min(900px, 85vw);
+
+  margin-top: 65px;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.hero-photo {
+  position: relative;
+
+  overflow: hidden;
+
+  aspect-ratio: 16 / 9;
+
+  border-radius: 30px;
+
+  border: 10px solid rgba(255, 255, 255, 0.65);
+
+  background: #ddd;
+
+  box-shadow:
+    0 30px 80px rgba(50, 40, 20, 0.15),
+    0 8px 20px rgba(50, 40, 20, 0.08);
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =====================================================
+   PHOTO NOTE
+===================================================== */
+
+.photo-note {
+  position: absolute;
+
+  top: -18px;
+  left: 35px;
+
+  padding: 10px 17px;
+
+  background: #171717;
+
+  color: white;
+
+  border-radius: 999px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  transform: rotate(-4deg);
+
+  z-index: 3;
+}
+
+
+/* =====================================================
+   PHOTO CAPTION
+===================================================== */
+
+.photo-caption {
+  position: absolute;
+
+  right: 25px;
+  bottom: -18px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 12px 18px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.6);
+
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.photo-caption span {
+  opacity: 0.4;
+}
+
+
+/* =====================================================
+   HERO DECORATIONS
+===================================================== */
+
+.hero-sticker {
+  position: absolute;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  font-family: "Playfair Display", serif;
+}
+
+.sticker-star {
+  top: 35%;
+
+  left: 8%;
+
+  font-size: 65px;
+
+  transform: rotate(-15deg);
+
+  opacity: 0.65;
+}
+
+.sticker-heart {
+  right: 9%;
+
+  top: 45%;
+
+  font-size: 65px;
+
+  transform: rotate(15deg);
+
+  opacity: 0.65;
+}
+
+
+/* =====================================================
+   SCROLL
+===================================================== */
+
+.scroll-text {
+  margin-top: 45px;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  opacity: 0.45;
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about {
+  min-height: 100vh;
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 110px 7vw 90px;
+
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  align-items: center;
+
+  column-gap: 4vw;
+
+  background:
+    radial-gradient(
+      ellipse 55% 50% at 15% 80%,
+      rgba(255, 185, 160, 0.16),
+      transparent 72%
+    ),
+    radial-gradient(
+      ellipse 50% 50% at 88% 25%,
+      rgba(180, 205, 255, 0.16),
+      transparent 72%
+    ),
+    #f4efe6;
+
+  color: #171717;
+}
+
+
+/* =====================================================
+   ABOUT LEFT
+===================================================== */
+
+.about-left {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 650px;
+
+  justify-self: start;
+
+  transform: translateY(-35px);
+}
+
+
+/* =====================================================
+   SECTION LABEL
+===================================================== */
+
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 28px;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  color: #9a6849;
+
+  opacity: 0.75;
+}
+
+
+/* =====================================================
+   ABOUT TITLE
+===================================================== */
+
+.about-title {
+  display: flex;
+
+  flex-direction: column;
+
+  margin: 0;
+
+  font-size: clamp(60px, 6.5vw, 95px);
+
+  line-height: 0.82;
+
+  letter-spacing: -5px;
+
+  font-weight: 700;
+}
+
+.about-we {
+  display: block;
+}
+
+
+/* =====================================================
+   TYPEWRITER WORD
+===================================================== */
+
+.changing-word {
+  display: block;
+
+  width: 11ch;
+
+  height: 1.05em;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  font-family: "Playfair Display", serif;
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-size: 0.82em;
+
+  letter-spacing: -4px;
+
+  color: #9a6849;
+}
+
+
+/* =====================================================
+   TYPEWRITER CURSOR
+===================================================== */
+
+.cursor {
+  display: inline-block;
+
+  margin-left: 3px;
+
+  font-family: "DM Sans", sans-serif;
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  color: #9a6849;
+
+  animation: blinkCursor 0.8s infinite;
+}
+
+@keyframes blinkCursor {
+
+  0%,
+  45% {
+    opacity: 1;
+  }
+
+  46%,
+  100% {
+    opacity: 0;
+  }
+
+}
+
+
+/* =====================================================
+   ABOUT GLASS CARD
+===================================================== */
+
+.about-card {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  max-width: none;
+
+  padding: 42px 48px;
+
+  justify-self: stretch;
+
+  transform: translateX(0);
+
+  border-radius: 32px;
+
+  background: rgba(255, 255, 255, 0.46);
+
+  border: 1px solid rgba(255, 255, 255, 0.82);
+
+  backdrop-filter: blur(25px);
+
+  -webkit-backdrop-filter: blur(25px);
+
+  box-shadow:
+    0 25px 70px rgba(50, 40, 20, 0.08);
+}
+
+
+/* =====================================================
+   ABOUT CARD NUMBER
+===================================================== */
+
+.about-card-number {
+  width: 44px;
+
+  height: 44px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 32px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.58);
+
+  border: 1px solid rgba(255, 255, 255, 0.85);
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   ABOUT CARD LABEL
+===================================================== */
+
+.about-card-label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  font-weight: 600;
+
+  color: #9a6849;
+
+  opacity: 0.75;
+}
+
+
+/* =====================================================
+   ABOUT CARD TITLE
+===================================================== */
+
+.about-card-content h3 {
+  margin-bottom: 16px;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(32px, 3vw, 48px);
+
+  font-weight: 500;
+
+  line-height: 1;
+}
+
+
+/* =====================================================
+   ABOUT CARD DIVIDER
+===================================================== */
+
+.about-divider {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 28px;
+}
+
+.about-divider span:first-child,
+.about-divider span:last-child {
+  width: 42px;
+
+  height: 1px;
+
+  background: rgba(23, 23, 23, 0.18);
+}
+
+.about-divider span:nth-child(2) {
+  font-size: 9px;
+
+  opacity: 0.45;
+}
+
+
+/* =====================================================
+   ABOUT CARD TEXT
+===================================================== */
+
+.about-card-content p {
+  max-width: 650px;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  opacity: 0.58;
+}
+
+/* =====================================================
+   ABOUT CARD DECORATION
+===================================================== */
+
+.about-card-decoration {
+  position: absolute;
+
+  top: -22px;
+
+  right: 30px;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 45px;
+
+  color: #9a6849;
+
+  transform: rotate(12deg);
+
+  opacity: 0.65;
+}
+
+
+/* =====================================================
+   ABOUT DECORATIONS
+===================================================== */
+
+.about-decoration {
+  position: absolute;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  font-family: "Playfair Display", serif;
+
+  color: #9a6849;
+}
+
+.about-star {
+  top: 18%;
+
+  left: 6%;
+
+  font-size: 45px;
+
+  transform: rotate(-12deg);
+
+  opacity: 0.45;
+}
+
+.about-heart {
+  right: 7%;
+
+  bottom: 13%;
+
+  font-size: 48px;
+
+  transform: rotate(10deg);
+
+  opacity: 0.45;
+}
+
+/* =====================================================
+   PROGRAMS
+===================================================== */
+
+.programs {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 135px 5vw 100px;
+
+  background:
+    radial-gradient(
+      ellipse 50% 45% at 85% 15%,
+      rgba(190, 210, 255, 0.12),
+      transparent 72%
+    ),
+    radial-gradient(
+      ellipse 50% 45% at 10% 75%,
+      rgba(255, 190, 165, 0.12),
+      transparent 72%
+    ),
+    #f4efe6;
+
+  color: #171717;
+}
+
+
+/* =====================================================
+   PROGRAM HEADER
+===================================================== */
+
+.programs-header {
+  width: min(1250px, 100%);
+
+  margin: 0 auto 80px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 60px;
+}
+
+.programs-header h2 {
+  display: flex;
+
+  flex-direction: column;
+
+  margin: 0;
+
+  font-size: clamp(70px, 8vw, 125px);
+
+  line-height: 0.78;
+
+  letter-spacing: -7px;
+
+  font-weight: 700;
+}
+
+.programs-header h2 span:last-child {
+  font-family: "Playfair Display", serif;
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  color: #9a6849;
+
+  letter-spacing: -6px;
+}
+
+.programs-intro {
+  max-width: 300px;
+
+  margin-bottom: 8px;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  opacity: 0.55;
+}
+
+
+/* =====================================================
+   SUBSECTION HEADING
+===================================================== */
+
+.subsection-heading {
+  width: min(1250px, 100%);
+
+  margin: 0 auto 20px;
+
+  padding-bottom: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba(23, 23, 23, 0.12);
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.8px;
+
+  color: #171717;
+
+  opacity: 0.55;
+}
+
+
+/* =====================================================
+   PROGRAM GRID
+===================================================== */
+
+.program-grid {
+  width: min(1250px, 100%);
+
+  margin: 0 auto 70px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+
+/* =====================================================
+   PROGRAM CARD
+===================================================== */
+
+.program-card {
+  min-height: 500px;
+
+  height: auto !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  overflow: hidden !important;
+
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.44);
+
+  border: 1px solid rgba(255, 255, 255, 0.82);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  box-shadow:
+    0 18px 45px rgba(50, 40, 20, 0.06);
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 25px 60px rgba(50, 40, 20, 0.1);
+}
+
+
+/* =====================================================
+   PROGRAM IMAGE
+===================================================== */
+
+/*
+   FIXED LANDSCAPE RATIO
+
+   Foto selalu 16:9.
+   Ukuran card TIDAK mengikuti ukuran foto asli.
+*/
+
+.program-image {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  background: #ddd5c8;
+}
+
+.program-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition:
+    transform 0.5s ease;
+}
+
+.program-card:hover .program-image img {
+  transform: scale(1.035);
+}
+
+
+/* =====================================================
+   PROGRAM NUMBER
+===================================================== */
+
+.program-number {
+  position: absolute;
+
+  top: 15px;
+
+  left: 15px;
+
+  width: 42px;
+
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  backdrop-filter: blur(12px);
+
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.85);
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   PROGRAM CONTENT
+===================================================== */
+
+.program-content {
+  flex: 1;
+
+  min-height: 0;
+
+  padding: 23px 22px 20px;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* =====================================================
+   PROGRAM META
+===================================================== */
+
+.program-meta {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 17px;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.7px;
+
+  opacity: 0.45;
+}
+
+
+/* =====================================================
+   PROGRAM TITLE
+===================================================== */
+
+.program-content h3 {
+  margin: 0 0 13px;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(25px, 2vw, 31px);
+
+  font-weight: 500;
+
+  line-height: 0.98;
+
+  letter-spacing: -0.5px;
+}
+
+
+/* =====================================================
+   PROGRAM DESCRIPTION
+===================================================== */
+
+.program-content p {
+  margin: 0;
+
+  font-size: 11.5px;
+
+  line-height: 1.65;
+
+  opacity: 0.58;
+}
+
+
+/* =====================================================
+   PROGRAM ARROW
+===================================================== */
+
+.program-arrow {
+  margin-top: auto;
+
+  padding-top: 18px;
+
+  width: fit-content;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  color: #171717;
+
+  transition:
+    transform 0.25s ease;
+}
+
+.program-card:hover .program-arrow {
+  transform: translateX(5px);
+}
+
+/* =====================================================
+   AGENDA
+===================================================== */
+
+.agenda-section {
+  width: 100%;
+
+  padding-top: 10px;
+}
+
+
+/* =====================================================
+   AGENDA LIST
+===================================================== */
+
+.agenda-list {
+  width: min(1250px, 100%);
+
+  margin: 0 auto;
+
+  border-top: 1px solid rgba(23, 23, 23, 0.12);
+}
+
+
+/* =====================================================
+   AGENDA CARD
+===================================================== */
+
+.agenda-card {
+  min-height: 115px;
+
+  display: grid;
+
+  grid-template-columns:
+    80px
+    300px
+    1fr
+    50px;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 22px 20px;
+
+  border-bottom: 1px solid rgba(23, 23, 23, 0.12);
+
+  transition:
+    background 0.25s ease,
+    padding 0.25s ease;
+}
+
+.agenda-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+
+  padding-left: 28px;
+}
+
+
+/* =====================================================
+   AGENDA NUMBER
+===================================================== */
+
+.agenda-number {
+  width: 42px;
+
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.5);
+
+  border: 1px solid rgba(255, 255, 255, 0.75);
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   AGENDA TITLE
+===================================================== */
+
+.agenda-title {
+  margin: 0;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 29px;
+
+  font-weight: 500;
+
+  line-height: 1;
+}
+
+
+/* =====================================================
+   AGENDA DESCRIPTION
+===================================================== */
+
+.agenda-description {
+  margin: 0;
+
+  max-width: 650px;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  opacity: 0.52;
+}
+
+
+/* =====================================================
+   AGENDA ARROW
+===================================================== */
+
+.agenda-arrow {
+  width: 40px;
+
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.45);
+
+  border: 1px solid rgba(255, 255, 255, 0.75);
+
+  font-size: 13px;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.agenda-card:hover .agenda-arrow {
+  transform: rotate(45deg);
+
+  background: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+
+  /* =========================
+   PROGRAMS MOBILE
+========================= */
+
+.programs {
+  padding: 100px 20px 80px;
+}
+
+.programs-header {
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 30px;
+
+  margin-bottom: 60px;
+}
+
+.programs-header h2 {
+  font-size: clamp(65px, 19vw, 105px);
+
+  letter-spacing: -5px;
+}
+
+.programs-header h2 span:last-child {
+  letter-spacing: -4px;
+}
+
+.program-list {
+  grid-template-columns: 1fr;
+}
+
+.program-grid {
+  grid-template-columns: 1fr;
+
+  gap: 22px;
+}
+
+.program-card {
+  height: 500px;
+}
+
+.program-image {
+  aspect-ratio: 16 / 9;
+}
+
+.program-content {
+  padding: 22px;
+}
+
+.program-content h3 {
+  font-size: 32px;
+}
+
+
+/* =========================
+   AGENDA MOBILE
+========================= */
+
+.agenda-card {
+  min-height: 130px;
+
+  grid-template-columns:
+    45px
+    1fr
+    35px;
+
+  gap: 15px;
+
+  padding: 22px 5px;
+}
+
+.agenda-number {
+  grid-column: 1;
+
+  grid-row: 1 / span 2;
+}
+
+.agenda-title {
+  grid-column: 2;
+
+  grid-row: 1;
+
+  font-size: 25px;
+}
+
+.agenda-description {
+  grid-column: 2;
+
+  grid-row: 2;
+
+  font-size: 11px;
+}
+
+.agenda-arrow {
+  grid-column: 3;
+
+  grid-row: 1 / span 2;
+}
+
+  /* =========================
+     NAVBAR
+  ========================= */
+
+  .navbar {
+    width: calc(100% - 24px);
+
+    top: 12px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .brand span {
+    font-size: 13px;
+  }
+
+  .contact-button {
+    padding: 10px 15px;
+
+    font-size: 12px;
+  }
+
+
+  /* =========================
+     HERO
+  ========================= */
+
+  .hero {
+    padding: 130px 20px 50px;
+  }
+
+  .hero h1 {
+    font-size: clamp(65px, 20vw, 110px);
+
+    letter-spacing: -4px;
+  }
+
+  .hero h1 span {
+    letter-spacing: -3px;
+  }
+
+  .hero-photo-container {
+    width: 100%;
+
+    margin-top: 50px;
+  }
+
+  .hero-photo {
+    border-width: 6px;
+
+    border-radius: 22px;
+  }
+
+  .sticker-star {
+    left: 3%;
+
+    top: 28%;
+
+    font-size: 35px;
+  }
+
+  .sticker-heart {
+    right: 3%;
+
+    top: 40%;
+
+    font-size: 35px;
+  }
+
+
+  /* =========================
+     ABOUT
+  ========================= */
+
+  .about {
+    min-height: auto;
+
+    padding: 100px 20px 80px;
+
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+  .about-left {
+    justify-self: start;
+
+    transform: none;
+  }
+
+  .about-title {
+    font-size: clamp(65px, 19vw, 105px);
+
+    letter-spacing: -5px;
+  }
+
+  .changing-word {
+    width: 11ch;
+
+    letter-spacing: -4px;
+  }
+
+  .about-card {
+    width: 100%;
+
+    padding: 30px;
+
+    justify-self: center;
+
+    transform: none;
+
+    border-radius: 25px;
+  }
+
+  .about-card-content p {
+    font-size: 14px;
+  }
+
+  .about-decoration {
+    font-size: 35px;
+  }
+
+
+  /* =========================
+     PROGRAMS
+  ========================= */
+
+  .programs {
+    padding: 100px 20px;
+  }
+
+  .programs-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    margin-bottom: 65px;
+
+    gap: 30px;
+  }
+
+.programs-header h2 {
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: baseline;
+
+  gap: 18px;
+
+  margin: 0;
+
+  font-size: clamp(60px, 7vw, 100px);
+
+  line-height: 0.85;
+
+  letter-spacing: -6px;
+
+  font-weight: 700;
+}
+
+.programs-header h2 span {
+  font-family: "Playfair Display", serif;
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  color: #9a6849;
+
+  letter-spacing: -5px;
+}
+
+  .subsection-heading {
+    margin-bottom: 20px;
+  }
+
+  .program-card,
+  .program-card-reverse {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+  }
+
+  .program-card-reverse .program-image {
+    order: 1;
+  }
+
+  .program-card-reverse .program-content {
+    order: 2;
+  }
+
+  .program-image {
+    min-height: 300px;
+  }
+
+  .program-content {
+    padding: 35px 28px;
+  }
+
+  .program-content h3 {
+    font-size: 42px;
+  }
+
+
+  /* =========================
+     AGENDA
+  ========================= */
+
+  .agenda-card {
+    grid-template-columns: 45px 1fr 35px;
+
+    gap: 15px;
+
+    padding: 25px 10px;
+  }
+
+  .agenda-date {
+    grid-column: 2;
+
+    grid-row: 1;
+
+    margin-bottom: 4px;
+  }
+
+  .agenda-info {
+    grid-column: 2;
+
+    grid-row: 2;
+  }
+
+  .agenda-arrow {
+    grid-column: 3;
+
+    grid-row: 1 / span 2;
+  }
+
+  .agenda-info h3 {
+    font-size: 25px;
+  }
+
+  .agenda-info p {
+    font-size: 12px;
+  }
+
+}
+
+/* =====================================================
+   CONTACT / LET'S CONNECT
+===================================================== */
+
+.contact {
+  min-height: 85vh;
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 120px 8vw 35px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  background:
+    radial-gradient(
+      ellipse 50% 50% at 15% 20%,
+      rgba(255, 190, 170, 0.18),
+      transparent 72%
+    ),
+    radial-gradient(
+      ellipse 50% 50% at 85% 80%,
+      rgba(180, 205, 255, 0.18),
+      transparent 72%
+    ),
+    #f4efe6;
+
+  color: #171717;
+}
+
+
+/* =========================
+   CONTACT CONTENT
+========================= */
+
+.contact-inner {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1100px, 100%);
+
+  margin: auto;
+
+  text-align: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.contact-inner .section-label {
+  margin-bottom: 25px;
+}
+
+
+/* =========================
+   CONTACT TITLE
+========================= */
+
+.contact-inner h2 {
+  display: flex;
+
+  flex-direction: column;
+
+  margin: 0;
+
+  font-size: clamp(85px, 12vw, 175px);
+
+  line-height: 0.78;
+
+  letter-spacing: -9px;
+
+  font-weight: 700;
+}
+
+.contact-inner h2 span {
+  font-family: "Playfair Display", serif;
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  color: #9a6849;
+
+  letter-spacing: -7px;
+}
+
+
+/* =========================
+   CONTACT DESCRIPTION
+========================= */
+
+.contact-inner p {
+  max-width: 380px;
+
+  margin: 35px auto 0;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  opacity: 0.55;
+}
+
+
+/* =========================
+   CONTACT BUTTON
+========================= */
+
+.contact-main-button {
+  margin-top: 35px;
+
+  padding: 16px 22px 16px 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.48);
+
+  border: 1px solid rgba(255, 255, 255, 0.82);
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 15px 45px rgba(50, 40, 20, 0.08);
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.contact-main-button span {
+  width: 32px;
+
+  height: 32px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #171717;
+
+  color: white;
+
+  font-size: 14px;
+
+  transition:
+    transform 0.3s ease;
+}
+
+.contact-main-button:hover {
+  transform: translateY(-4px);
+
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.contact-main-button:hover span {
+  transform: rotate(45deg);
+}
+
+
+/* =========================
+   DECORATIONS
+========================= */
+
+.contact-orbit {
+  position: absolute;
+
+  z-index: 1;
+
+  font-family: "Playfair Display", serif;
+
+  color: #9a6849;
+
+  pointer-events: none;
+}
+
+.contact-orbit-one {
+  top: 25%;
+
+  left: 12%;
+
+  font-size: 55px;
+
+  transform: rotate(-15deg);
+
+  opacity: 0.5;
+}
+
+.contact-orbit-two {
+  right: 12%;
+
+  bottom: 25%;
+
+  font-size: 65px;
+
+  transform: rotate(12deg);
+
+  opacity: 0.45;
+}
+
+
+/* =========================
+   CONTACT FOOTER
+========================= */
+
+.contact-footer {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  padding-top: 25px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  border-top: 1px solid rgba(23, 23, 23, 0.12);
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+
+  opacity: 0.45;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .contact {
+    min-height: 80vh;
+
+    padding: 100px 20px 25px;
+  }
+
+  .contact-inner h2 {
+    font-size: clamp(75px, 22vw, 120px);
+
+    letter-spacing: -6px;
+  }
+
+  .contact-inner h2 span {
+    letter-spacing: -5px;
+  }
+
+  .contact-inner p {
+    max-width: 300px;
+
+    font-size: 14px;
+  }
+
+  .contact-main-button {
+    padding: 14px 18px 14px 20px;
+
+    gap: 18px;
+  }
+
+  .contact-orbit-one {
+    left: 5%;
+
+    font-size: 35px;
+  }
+
+  .contact-orbit-two {
+    right: 5%;
+
+    font-size: 40px;
+  }
+
+  .contact-footer {
+    font-size: 8px;
+  }
+
+}
+
+/* =========================================
+   CONTACT LINKS
+========================================= */
+
+.contact-links {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-top: 35px;
+}
+
+.contact-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  min-width: 125px;
+
+  padding: 13px 19px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.45);
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+
+  backdrop-filter: blur(15px);
+
+  -webkit-backdrop-filter: blur(15px);
+
+  color: #171717;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 10px 30px rgba(50, 40, 20, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.contact-link:hover {
+  transform: translateY(-3px);
+
+  background: rgba(255, 255, 255, 0.7);
+
+  box-shadow:
+    0 15px 35px rgba(50, 40, 20, 0.08);
+}
+
+.contact-icon {
+  width: 17px;
+
+  height: 17px;
+
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+
+  .contact-links {
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: 10px;
+  }
+
+  .contact-link {
+    width: min(280px, 100%);
+  }
+
+}
