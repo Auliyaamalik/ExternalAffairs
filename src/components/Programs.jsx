@@ -39,7 +39,7 @@ const agendas = [
     number: "01",
     title: "English Clinic",
     description:
-      "Deskripsi singkat mengenai agenda.",
+      "English Clinic / EC merupakan salah satu agenda berisi fun quiz berbahasa inggris dengan standar TOEFL & IELTS untuk melatih mahasiswa DSI dalam menjawab pertanyaan bahasa inggris secara Online melalui media sosial HMSI hingga offline pada beberapa program kerja HMSI.",
   },
   {
     number: "02",

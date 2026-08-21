@@ -2025,3 +2025,336 @@
   }
 
 }
+
+/* =========================================
+   FEEDBACK
+========================================= */
+
+.feedback {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 120px 5vw 130px;
+
+  background:
+    radial-gradient(
+      ellipse 45% 50% at 15% 40%,
+      rgba(255, 190, 165, 0.18),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 45% 50% at 85% 60%,
+      rgba(190, 210, 255, 0.16),
+      transparent 70%
+    ),
+    #f4efe6;
+
+  color: #171717;
+}
+
+
+/* =========================================
+   FEEDBACK INNER
+========================================= */
+
+.feedback-inner {
+  width: min(900px, 100%);
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   FEEDBACK TITLE
+========================================= */
+
+.feedback h2 {
+  margin: 0;
+
+  font-size: clamp(55px, 7vw, 100px);
+
+  line-height: 0.85;
+
+  letter-spacing: -5px;
+
+  font-weight: 700;
+}
+
+.feedback h2 span {
+  display: block;
+
+  font-family: "Playfair Display", serif;
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  color: #9a6849;
+
+  letter-spacing: -4px;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.feedback-subtitle {
+  margin: 25px auto 0;
+
+  font-size: 13px;
+
+  opacity: 0.5;
+}
+
+
+/* =========================================
+   FEEDBACK CARD
+========================================= */
+
+.feedback-card {
+  width: min(700px, 100%);
+
+  margin: 55px auto 0;
+
+  padding: 40px 35px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.42);
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+
+  backdrop-filter: blur(20px);
+
+  -webkit-backdrop-filter: blur(20px);
+
+  box-shadow:
+    0 20px 60px rgba(50, 40, 20, 0.06);
+}
+
+
+/* =========================================
+   QUESTION
+========================================= */
+
+.feedback-question {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  opacity: 0.65;
+}
+
+.feedback-question strong {
+  margin-left: 4px;
+
+  font-weight: 700;
+
+  color: #171717;
+}
+
+
+/* =========================================
+   RATING
+========================================= */
+
+.rating-container {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-top: 28px;
+
+  padding: 9px 12px;
+
+  width: fit-content;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.45);
+
+  border: 1px solid rgba(255, 255, 255, 0.75);
+
+  backdrop-filter: blur(15px);
+
+  -webkit-backdrop-filter: blur(15px);
+}
+
+
+/* =========================================
+   STAR BUTTON
+========================================= */
+
+.rating-star {
+  width: 45px;
+
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: rgba(23, 23, 23, 0.18);
+
+  font-size: 27px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.rating-star:hover {
+  transform: translateY(-3px) scale(1.08);
+
+  color: rgba(154, 104, 73, 0.55);
+}
+
+.rating-star.active {
+  color: #9a6849;
+}
+
+
+/* =========================================
+   RESPONSE
+========================================= */
+
+.feedback-response {
+  min-height: 65px;
+
+  margin-top: 25px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+
+  opacity: 0.45;
+}
+
+.feedback-response.show {
+  opacity: 1;
+
+  animation: feedbackPop 0.35s ease;
+}
+
+.feedback-response p {
+  max-width: 570px;
+
+  margin: 7px auto 0;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 18px;
+
+  font-style: italic;
+
+  line-height: 1.4;
+}
+
+.feedback-rating {
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  opacity: 0.4;
+}
+
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes feedbackPop {
+
+  0% {
+    opacity: 0;
+
+    transform: translateY(7px);
+  }
+
+  100% {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .feedback {
+    padding: 100px 20px;
+  }
+
+  .feedback h2 {
+    font-size: clamp(50px, 15vw, 80px);
+
+    letter-spacing: -4px;
+  }
+
+  .feedback-card {
+    padding: 30px 20px;
+
+    margin-top: 45px;
+
+    border-radius: 25px;
+  }
+
+  .rating-container {
+    gap: 2px;
+
+    padding: 7px 8px;
+  }
+
+  .rating-star {
+    width: 39px;
+
+    height: 39px;
+
+    font-size: 23px;
+  }
+
+  .feedback-response p {
+    font-size: 16px;
+  }
+
+}
